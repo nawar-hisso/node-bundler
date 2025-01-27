@@ -9,6 +9,7 @@ This project is a Node.js application implementing a bundler for Ethereum Accoun
 - **Biconomy Integration**: Utilizes Biconomy's bundler service.
 - **Flexible Configuration**: Environment variables for easy customization.
 - **Unit and Integration Tests**: Comprehensive test coverage with `jest` and `supertest`.
+- **API Documentation**: Clear API documentation using the `Bundler.postman_collection.json` file.
 
 ---
 
