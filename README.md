@@ -1,6 +1,6 @@
 # Node Bundler for ERC-4337 UserOperations
 
-This project is a Node.js application implementing a bundler for Ethereum Account Abstraction (ERC-4337). The bundler enables efficient processing of UserOperations, adhering to the ERC-4337 standard.
+This project is a Node.js application implementing a bundler for Ethereum Account Abstraction (ERC-4337). This simple bundler enables efficient processing of UserOperations.
 
 ## Features
 
