@@ -1,0 +1,623 @@
+{
+	"info": {
+		"_postman_id": "4457b2bd-8be4-4f77-b081-7cbc586f8dbb",
+		"name": "Bundler",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3657318"
+	},
+	"item": [
+		{
+			"name": "eth_sendUserOperation",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"jsonrpc\": \"2.0\",\n    \"id\": 1,\n    \"method\": \"eth_sendUserOperation\",\n    \"params\": [\n        {\n            \"sender\": \"0xe6dBb5C8696d2E0f90B875cbb6ef26E3bBa575AC\",\n            \"nonce\": \"0x1f\",\n            \"initCode\": \"0x\",\n            \"callData\": \"0x0000189a0000000000000000000000000065512840a4c8e80b047c2246c06302d0b3801c00000000000000000000000000000000000000000000000000005af3107a400000000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000000\",\n            \"signature\": \"0x00000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000001c5b32f37f5bea87bdd5374eb2ac54ea8e000000000000000000000000000000000000000000000000000000000000004184c13f24218237b77f568e702d9f7ad0088a6a8701a8d95dd4c8f906afabdb390ff389c1edd8c5e5c87ce93d3b54b7889a8b4a9c1d9c711f55a86709fc16ee751b00000000000000000000000000000000000000000000000000000000000000\",\n            \"paymasterAndData\": \"0x\",\n            \"maxFeePerGas\": \"0x5152ddb5\",\n            \"maxPriorityFeePerGas\": \"0x8e817a\",\n            \"verificationGasLimit\": \"0x113f9\",\n            \"callGasLimit\": \"0x3c6a\",\n            \"preVerificationGas\": \"0xe312\"\n        },\n        \"0x5ff137d4b0fdcd49dca30c7cf57e578a026d2789\" // EntryPoint\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/v1/rpc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"rpc"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"jsonrpc\": \"2.0\",\n    \"id\": 1,\n    \"method\": \"eth_sendUserOperation\",\n    \"params\": [\n        {\n            \"sender\": \"0xe6dBb5C8696d2E0f90B875cbb6ef26E3bBa575AC\",\n            \"nonce\": \"0x5\",\n            \"initCode\": \"0x\",\n            \"callData\": \"0x0000189a0000000000000000000000000065512840a4c8e80b047c2246c06302d0b3801c00000000000000000000000000000000000000000000000000005af3107a400000000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000000\",\n            \"signature\": \"0x00000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000001c5b32f37f5bea87bdd5374eb2ac54ea8e00000000000000000000000000000000000000000000000000000000000000413a310215e3f5dc87090e1ba3ea1e970b3c1f6f0a15ba39ea308e2e0e2b38777f37c26bdecd65488d51b1b8bbf6e6a7b9b2fb6f50cd47f1c260cdef6f79efe9051b00000000000000000000000000000000000000000000000000000000000000\",\n            \"paymasterAndData\": \"0x\",\n            \"maxFeePerGas\": \"0x3685f59f9\",\n            \"maxPriorityFeePerGas\": \"0x10714fa\",\n            \"verificationGasLimit\": \"0x113f9\",\n            \"callGasLimit\": \"0x3c6a\",\n            \"preVerificationGas\": \"0xe32c\"\n        },\n        \"0x5ff137d4b0fdcd49dca30c7cf57e578a026d2789\", // EntryPoint\n        \"0x4aAc55CcF940Cc3Bbbbc82f0a8537002583a42A8\" // Beneficiary\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "102"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"66-H6D+wsJt2Fun6ULtVq8N+CUvKFw\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Jan 2025 16:00:54 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"jsonrpc\": \"2.0\",\n    \"id\": 1,\n    \"result\": \"0x0386f5a50f15eea0a49e8f4a7b30ad59b08939e81daa7876408b50ce837308ff\"\n}"
+				},
+				{
+					"name": "Failed | Invalid nonce",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"jsonrpc\": \"2.0\",\n    \"id\": 1,\n    \"method\": \"eth_sendUserOperation\",\n    \"params\": [\n        {\n            \"sender\": \"0xe6dBb5C8696d2E0f90B875cbb6ef26E3bBa575AC\",\n            \"nonce\": \"0x5\",\n            \"initCode\": \"0x\",\n            \"callData\": \"0x0000189a0000000000000000000000000065512840a4c8e80b047c2246c06302d0b3801c00000000000000000000000000000000000000000000000000005af3107a400000000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000000\",\n            \"signature\": \"0x00000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000001c5b32f37f5bea87bdd5374eb2ac54ea8e00000000000000000000000000000000000000000000000000000000000000413a310215e3f5dc87090e1ba3ea1e970b3c1f6f0a15ba39ea308e2e0e2b38777f37c26bdecd65488d51b1b8bbf6e6a7b9b2fb6f50cd47f1c260cdef6f79efe9051b00000000000000000000000000000000000000000000000000000000000000\",\n            \"paymasterAndData\": \"0x\",\n            \"maxFeePerGas\": \"0x3685f59f9\",\n            \"maxPriorityFeePerGas\": \"0x10714fa\",\n            \"verificationGasLimit\": \"0x113f9\",\n            \"callGasLimit\": \"0x3c6a\",\n            \"preVerificationGas\": \"0xe32c\"\n        },\n        \"0x5ff137d4b0fdcd49dca30c7cf57e578a026d2789\", // EntryPoint\n        \"0x4aAc55CcF940Cc3Bbbbc82f0a8537002583a42A8\" // Beneficiary\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000"
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "87"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"57-EEiAdFoUpqagSSPwgjsYKx763aY\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Jan 2025 16:02:41 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"jsonrpc\": \"2.0\",\n    \"id\": 1,\n    \"error\": {\n        \"code\": -32000,\n        \"message\": \"AA25 invalid account nonce\"\n    }\n}"
+				},
+				{
+					"name": "Failed | Signature error",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"jsonrpc\": \"2.0\",\n    \"id\": 1,\n    \"method\": \"eth_sendUserOperation\",\n    \"params\": [\n        {\n            \"sender\": \"0xe6dBb5C8696d2E0f90B875cbb6ef26E3bBa575AC\",\n            \"nonce\": \"0x6\",\n            \"initCode\": \"0x\",\n            \"callData\": \"0x0000189a0000000000000000000000000065512840a4c8e80b047c2246c06302d0b3801c00000000000000000000000000000000000000000000000000005af3107a400000000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000000\",\n            \"signature\": \"0x00000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000001c5b32f37f5bea87bdd5374eb2ac54ea8e0000000000000000000000000000000000000000000000000000000000000041147bf8aa02fb83924feab3a48bfc915a08be7435387a72f7829dfd096fde1e3f254a384af98f33c6e9e8f53d14bffc829775ce651d3df66539e1bc9c2c503beb1b00000000000000000000000000000000000000000000000000000000000000\",\n            \"paymasterAndData\": \"0x\",\n            \"maxFeePerGas\": \"0x340aeb0cf\",\n            \"maxPriorityFeePerGas\": \"0x10714fa\",\n            \"verificationGasLimit\": \"0x113f9\",\n            \"callGasLimit\": \"0x3c6a\",\n            \"preVerificationGas\": \"0xe32c\"\n        },\n        \"0x5ff137d4b0fdcd49dca30c7cf57e578a026d2789\", // EntryPoint\n        \"0x4aAc55CcF940Cc3Bbbbc82f0a8537002583a42A8\" // Beneficiary\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000"
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "81"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"51-Vmcf3RoYhzUjw8tXWfG29rEORP4\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Jan 2025 16:05:42 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"jsonrpc\": \"2.0\",\n    \"id\": 1,\n    \"error\": {\n        \"code\": -32000,\n        \"message\": \"AA24 signature error\"\n    }\n}"
+				},
+				{
+					"name": "Failed | Insufficient funds",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"jsonrpc\": \"2.0\",\n    \"id\": 1,\n    \"method\": \"eth_sendUserOperation\",\n    \"params\": [\n        {\n            \"sender\": \"0xe6dBb5C8696d2E0f90B875cbb6ef26E3bBa575AC\",\n            \"nonce\": \"0x6\",\n            \"initCode\": \"0x\",\n            \"callData\": \"0x0000189a0000000000000000000000000065512840a4c8e80b047c2246c06302d0b3801c00000000000000000000000000000000000000000000000000005af3107a400000000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000000\",\n            \"signature\": \"0x00000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000001c5b32f37f5bea87bdd5374eb2ac54ea8e0000000000000000000000000000000000000000000000000000000000000041147bf8aa02fb83924feab3a48bfc915a08be7435387a72f7829dfd096fde1e3f254a384ae98f33c6e9e8f53d14bffc829775ce651d3df66539e1bc9c2c503beb1b00000000000000000000000000000000000000000000000000000000000000\",\n            \"paymasterAndData\": \"0x\",\n            \"maxFeePerGas\": \"0x340aeb0cf\",\n            \"maxPriorityFeePerGas\": \"0x10714fa\",\n            \"verificationGasLimit\": \"0x113f9\",\n            \"callGasLimit\": \"0x3c6a\",\n            \"preVerificationGas\": \"0xe32c\"\n        },\n        \"0x5ff137d4b0fdcd49dca30c7cf57e578a026d2789\", // EntryPoint\n        \"0x4aAc55CcF940Cc3Bbbbc82f0a8537002583a42A8\" // Beneficiary\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000"
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "184"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"b8-xOrt69oCs6DGjtop02FlwmauxAc\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Jan 2025 16:07:45 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"jsonrpc\": \"2.0\",\n    \"id\": 1,\n    \"error\": {\n        \"code\": -32000,\n        \"message\": \"insufficient funds for gas * price + value: balance 4561848007534360, tx cost 54055348716000000, overshot 49493500708465640\"\n    }\n}"
+				},
+				{
+					"name": "Failed | Paymaster Out Of Gas",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"jsonrpc\": \"2.0\",\n    \"id\": 1,\n    \"method\": \"eth_sendUserOperation\",\n    \"params\": [\n        {\n            \"sender\": \"0xe6dBb5C8696d2E0f90B875cbb6ef26E3bBa575AC\",\n            \"nonce\": \"0x8\",\n            \"initCode\": \"0x\",\n            \"callData\": \"0x0000189a0000000000000000000000000065512840a4c8e80b047c2246c06302d0b3801c00000000000000000000000000000000000000000000000000005af3107a400000000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000000\",\n            \"signature\": \"0x00000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000001c5b32f37f5bea87bdd5374eb2ac54ea8e000000000000000000000000000000000000000000000000000000000000004192890527f7e9a3156dec5f33d1e616c15b31a27ccf7d04d0f14b69d1eefe612305438ca150313b3dc9a263a6ff33ffc8e8d05f8cc9b1b124420cddd644814d801b00000000000000000000000000000000000000000000000000000000000000\",\n            \"paymasterAndData\": \"0x00000f79b7faf42eebadba19acc07cd08af447890000000000000000000000004aac55ccf940cc3bbbbc82f0a8537002583a42a80000000000000000000000000000000000000000000000000000000067966ac200000000000000000000000000000000000000000000000000000000679663ba00000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000041ca301c4e7d8fc8fb103d184c63836a22d71cfe8e30b936676b4603457275f7b96b3e71c40c70f402612ce00dc84df2b0503fd8ed56a973a4054aadb64c9f11381c00000000000000000000000000000000000000000000000000000000000000\",\n            \"maxFeePerGas\": 15889197694,\n            \"maxPriorityFeePerGas\": 17241338,\n            \"verificationGasLimit\": 81214,\n            \"callGasLimit\": 15466,\n            \"preVerificationGas\": 79494\n        },\n        \"0x5ff137d4b0fdcd49dca30c7cf57e578a026d2789\", // EntryPoint\n        \"0x4aAc55CcF940Cc3Bbbbc82f0a8537002583a42A8\" // Beneficiary\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000"
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "83"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"53-JjwG1VMvzpVTPqDvZmPdJDLHHEo\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Jan 2025 16:35:56 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"jsonrpc\": \"2.0\",\n    \"id\": 1,\n    \"error\": {\n        \"code\": -32000,\n        \"message\": \"AA33 reverted (or OOG)\"\n    }\n}"
+				},
+				{
+					"name": "Failed | Didn't pay refund",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"jsonrpc\": \"2.0\",\n    \"id\": 1,\n    \"method\": \"eth_sendUserOperation\",\n    \"params\": [\n        {\n            \"sender\": \"0xe6dBb5C8696d2E0f90B875cbb6ef26E3bBa575AC\",\n            \"nonce\": \"0x1f\",\n            \"initCode\": \"0x\",\n            \"callData\": \"0x0000189a0000000000000000000000000065512840a4c8e80b047c2246c06302d0b3801c00000000000000000000000000000000000000000000000000005af3107a400000000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000000\",\n            \"signature\": \"0x00000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000001c5b32f37f5bea87bdd5374eb2ac54ea8e000000000000000000000000000000000000000000000000000000000000004184c13f24218237b77f568e702d9f7ad0088a6a8701a8d95dd4c8f906afabdb390ff389c1edd8c5e5c87ce93d3b54b7889a8b4a9c1d9c711f55a86709fc16ee751b00000000000000000000000000000000000000000000000000000000000000\",\n            \"paymasterAndData\": \"0x\",\n            \"maxFeePerGas\": \"0x5152ddb5\",\n            \"maxPriorityFeePerGas\": \"0x8e817a\",\n            \"verificationGasLimit\": \"0x113f9\",\n            \"callGasLimit\": \"0x3c6a\",\n            \"preVerificationGas\": \"0xe312\"\n        },\n        \"0x5ff137d4b0fdcd49dca30c7cf57e578a026d2789\" // EntryPoint\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/v1/rpc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"rpc"
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "84"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"54-z3cSrA73AQV2aio0tO5exu7B2K8\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Jan 2025 23:12:05 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"jsonrpc\": \"2.0\",\n    \"id\": 1,\n    \"error\": {\n        \"code\": -32603,\n        \"message\": \"AA21 didn't pay prefund\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "generateUserOperation",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"to\": \"0x0065512840A4c8E80b047C2246c06302d0B3801C\",\n    \"amount\": 0.0001\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/v1/user-op",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"user-op"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"to\": \"0x0065512840A4c8E80b047C2246c06302d0B3801C\",\n    \"amount\": 0.0001\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/v1/user-op",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"user-op"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "952"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"3b8-4cdM8X6mMbtL49JJJMh5celOqd8\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Jan 2025 18:27:08 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"userOp\": {\n        \"sender\": \"0xe6dBb5C8696d2E0f90B875cbb6ef26E3bBa575AC\",\n        \"nonce\": \"0x8\",\n        \"initCode\": \"0x\",\n        \"callData\": \"0x0000189a0000000000000000000000000065512840a4c8e80b047c2246c06302d0b3801c00000000000000000000000000000000000000000000000000005af3107a400000000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000000\",\n        \"signature\": \"0x00000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000001c5b32f37f5bea87bdd5374eb2ac54ea8e0000000000000000000000000000000000000000000000000000000000000041d0543f071f0d38fa34a3c99a9dd40eb32122d922b8b8b5f8a75cee888d15852042dd6536b549b509a187e69f7fe9fe14df1da035ca2c8bc8f96194881de1278e1b00000000000000000000000000000000000000000000000000000000000000\",\n        \"paymasterAndData\": \"0x\",\n        \"maxFeePerGas\": \"0x263511908\",\n        \"maxPriorityFeePerGas\": \"0x10714fa\",\n        \"verificationGasLimit\": \"0x113f9\",\n        \"callGasLimit\": \"0x3c6a\",\n        \"preVerificationGas\": \"0xe32c\"\n    }\n}"
+				},
+				{
+					"name": "Failed | Invalid address",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"amount\": 0.0001\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/v1/user-op",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"user-op"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "69"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"45-6P6OhK41m34V8aX/1cnSV4ZOZTM\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Jan 2025 18:38:00 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": {\n        \"code\": -32602,\n        \"message\": \"Missing/Invalid fields: address\"\n    }\n}"
+				},
+				{
+					"name": "Failed | Invalid amount",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"to\": \"0x0065512840A4c8E80b047C2246c06302d0B3801C\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/v1/user-op",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"user-op"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "68"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"44-BKR33DfJT55RBO4pDBopQwoaHZ8\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Jan 2025 18:38:16 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": {\n        \"code\": -32602,\n        \"message\": \"Missing/Invalid fields: amount\"\n    }\n}"
+				}
+			]
+		}
+	]
+}
