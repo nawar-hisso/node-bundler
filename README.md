@@ -5,8 +5,8 @@ This project is a Node.js application implementing a bundler for Ethereum Accoun
 ## Features
 
 - **UserOperations Support**: Handles UserOperations for Ethereum account abstraction.
-- **Express.js API**: Provides REST endpoints for submitting and validating UserOperations.
-- **Biconomy Integration**: Utilizes Biconomy's bundler and paymaster services.
+- **Express.js API**: Provides REST endpoints for getting and submitting UserOperations.
+- **Biconomy Integration**: Utilizes Biconomy's bundler service.
 - **Flexible Configuration**: Environment variables for easy customization.
 - **Unit and Integration Tests**: Comprehensive test coverage with `jest` and `supertest`.
 
@@ -43,7 +43,7 @@ To run this project, you need:
    yarn install
    ```
 
-3. Set up environment variables by creating a `.env` file in the root directory and adding the following:
+3. Set up environment variables by creating a `.env` file in the root directory and adding the following (Explained also in the `.env.example` file):
    ```env
    PORT=3000
    VERSION=v1
